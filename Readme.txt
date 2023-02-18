@@ -60,5 +60,7 @@ I create navigation bar with About us and home page
 
 1929*
 Then do some css for my home page and about us.
-Finally, I completed my project successfully.   
+Finally, I completed my project successfully.  
+
+I complted my css in all files.
 
