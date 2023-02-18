@@ -33,7 +33,13 @@ namespace Soaps
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
-            services.AddRazorPages();
+            services.AddDbContext<SoapContext>(options =>
+   options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+        
+        services.AddRazorPages();
+
+            services.AddDbContext<SoapsContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("SoapsContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
