@@ -39,3 +39,24 @@ edit the Startup.ConfigureServices file
 Add a connection string to the appsettings.json file
 
 
+I reached on Scaffold Pages 
+
+In the PMC, enter the following commands:
+Add-Migration InitialCreate
+Update-Database
+
+After completing this step I test the app and it is running perfectly.
+
+In the Next step,  i create a new class SeedData.
+
+Update the Program.cs
+
+After that Test my project .
+Finally i can see my data .
+
+I started working on css
+I create navigation bar with About us and home page
+
+Then do some css for my home page and about us.
+Finally, I completed my project successfully.   1929.
+
